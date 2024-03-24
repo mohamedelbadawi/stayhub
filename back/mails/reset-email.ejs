@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account reset password</title>
+</head>
+
+<body>
+    <p>Hello <%= name %>,</p>
+    <p> We have received a request to reset the password for your account.
+        If you made this request, please click on the link below and paste this code :
+
+        <strong>
+            <%= token %>
+        </strong>
+    </p>
+
+    <a href="<%= link %>" target="_blank">click here</a>
+    <%link %>
+
+        <strong>
+
+        </strong>
+        <p>This code is working for only 10 minutes or until your password is reset.
+            If you did not ask to change your password, please ignore this email and your account will remain
+            unchanged.</p>
+
+</body>
+
+</html>
